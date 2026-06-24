@@ -1,56 +1,72 @@
-# Site Checker
+# 🔍 Site Checker - Browser Security Extension
 
-## Overview
+A cybersecurity-focused browser extension that helps users identify potentially malicious websites by analyzing domains against known threat indicators.
 
-Site Checker is a browser extension designed to determine whether a website is legitimate or potentially a scam. It analyzes the domain and subdomain of the current site, compares it against a blocklist, and provides a status update.
+## 🚀 Overview
 
-## Features
+Site Checker is a lightweight browser security extension built to help users detect suspicious or scam websites during browsing.
 
-- Checks if a site is on a predefined blocklist.
-- Provides a visual status update indicating whether the site is potentially a scam or appears safe.
-- Supports Chrome, Firefox, and Microsoft Edge browsers.
+The extension checks the active website domain, compares it with a predefined threat blocklist, and provides a security status notification.
 
-## Installation
+## 🎯 Objectives
 
-### Chrome
+- Detect potentially malicious websites
+- Help users avoid phishing/scam pages
+- Provide quick security awareness while browsing
+- Demonstrate browser-based security automation
 
-1. Download the latest version from [GitHub Releases](https://github.com/rushikeshthakur25/site-checker/releases).
-2. Open Chrome and go to `chrome://extensions/`.
-3. Enable "Developer mode" using the toggle in the top-right corner.
-4. Click "Load unpacked" and select the directory where you extracted the downloaded files.
+## ✨ Features
 
-### Firefox
+✅ Domain reputation checking  
+✅ Scam/phishing domain detection  
+✅ Real-time website analysis  
+✅ Browser popup security status  
+✅ Customizable blocklist  
+✅ Lightweight browser integration  
 
-1. Download the latest version from [GitHub Releases](https://github.com/rushikeshthakur25/site-checker/releases).
-2. Open Firefox and go to `about:debugging`.
-3. Click "This Firefox" (or "This Nightly" for Firefox Nightly).
-4. Click "Load Temporary Add-on" and select the `.xpi` file from the downloaded release.
+## 🛠️ Technologies Used
 
-### Microsoft Edge
+- JavaScript
+- HTML
+- Chrome Extension APIs
+- Browser Security APIs
 
-1. Download the latest version from [GitHub Releases](https://github.com/rushikeshthakur25/site-checker/releases).
-2. Open Edge and go to `edge://extensions/`.
-3. Enable "Developer mode" using the toggle in the bottom-left corner.
-4. Click "Load unpacked" and select the directory where you extracted the downloaded files.
+## 🧩 Project Structure
+site-checker/
+│
+├── manifest.json # Extension configuration
+├── background.js # Background service logic
+├── content.js # Website content analysis
+├── popup.html # Extension interface
+├── popup.js # Popup functionality
+└── icons/ # Extension assets
 
-## Usage
 
-1. Open the extension popup by clicking on the Site Checker icon in the browser toolbar.
-2. The extension will automatically check the current website and display a status message indicating whether the site is potentially a scam or appears safe.
+## ⚙️ Installation
 
-## Blocklist
+### Chrome / Edge
 
-The blocklist used by Site Checker includes various known scam and phishing domains. You can customize the blocklist in the `content.js` file to add or remove domains as needed.
+1. Clone the repository
 
-## Future Updates
+bash
+git clone https://github.com/rushikeshthakur25/site-checker.git
 
-This is the first version of Site Checker. Future updates will include more powerful features and improvements. Stay tuned for enhancements and additional functionality!
+2. Open:
+   chrome://extensions/
+3. Enable Developer Mode
+4. Click "Load unpacked"
+5. Select project folder 
 
-## Contributing
+🧪 Usage
+Open any website
+Click Site Checker extension
+View security status
 
-Feel free to contribute by submitting issues or pull requests on the [GitHub repository](https://github.com/rushikeshthakur25/site-checker). Your feedback and contributions are welcome!
+Example:
+Safe Website:
 
-## License
+Status: Safe ✅
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
+Suspicious Website:
 
+Warning: Potential Risk ⚠️
